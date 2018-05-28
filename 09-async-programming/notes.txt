@@ -1,9 +1,23 @@
 parallel vs async
  - 4 core thread and 10000 virtual thread.
  - in between thread communication
+
 cocurrency
  - jitter
  - synchronus xhr
  - event loop first come first serve
  - managing cocurrency
+
+ Inversion of control
+ - The part I am controlling, the part I am not.
+ - Callback no too early, fast, too many time, ...
+ 
+ Not Resonable 
+ - temproanl dependenices
+ - Non local jump.
+
+Fix
+ - split Callback
+ - err
+
  
