@@ -20,4 +20,17 @@ Fix
  - split Callback
  - err
 
- 
+ Thunk-
+  - element the time complexity 
+  - using race condition.
+
+Promsises-
+  - Promise hell.
+  - future value.
+  - uninvert the inversion of control. 
+  - trust 
+  - only resolved once, success, error, immutable once resolved.
+  - callback manager
+  - flow control
+  - chaining promises.
+  - promise chain 
