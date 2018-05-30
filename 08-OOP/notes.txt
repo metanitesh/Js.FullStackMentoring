@@ -1,1 +1,67 @@
-notes.txt
+ - Object Oreineted Analysis | Design | Program.
+ - What Classes to write.
+ - IT's meant to be good enough, just enough design to move forword succesfull.
+
+
+ - Data + Logic object + onject to object communication.
+ - Object - closer to real world.
+ - Identity and attribute (state) and behaviour.
+
+ Example 
+  - balance | number - deposit and withdraw.
+  - date, bank account.
+
+  - Identify the objects - noun is object. the in front of it.
+
+Class 
+ Example - account number, balabce, open(), close(), getBalance()..
+
+Abstraction 
+ - the idea of table. instead of each object, abstract to the class.
+
+ Encapsulation 
+ - inforamtion hiding, should not reveal anything require more than what is required. black boxing.
+ - inner working should be hidden, easily change the inner working. 
+ - It is reducing the dependency, to stop cascading. 
+
+ Inharitance
+ - Person and customer,
+ - We are using abstraction so no chnage in person. 
+
+ Polymorphism 
+ - +
+ - function overriding.
+
+ Object modeling
+ - gather requirment
+ - describe app
+ - identify the main objects.
+ - describe the interaction
+ - create a class diagram
+
+ UML diagram
+
+ Use Cases.
+ - Title - register new member, transfer fund
+ - Actor - User, Customer, System
+ - Scenario - Customer reveiws the item
+            - Customer is shown the confimation page
+ 
+ - Primary actor and secondary actors
+ - Scenarios - purchase items, balance account. short, readable.
+
+ - Use case Diagaram
+
+ - user story: 
+  As a (usesr)
+  I want to (goal)
+  so that (reason)
+
+- as a User I want to sort the enteries so that I can find the most recent conent.
+
+Domain modeling
+ - 
+
+
+
+
