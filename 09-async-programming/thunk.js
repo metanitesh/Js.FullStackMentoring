@@ -17,8 +17,6 @@ function output(text) {
     console.log(text);
 }
 
-// **************************************
-
 function getFile(file) {
     var fn, response;
     fakeAjax(file, function (text) {

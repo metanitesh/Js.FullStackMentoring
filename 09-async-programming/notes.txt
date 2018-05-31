@@ -21,7 +21,7 @@ Fix
  - err
 
  Thunk-
-  - element the time complexity 
+  - elemenate the time complexity 
   - using race condition.
 
 Promsises-
@@ -34,3 +34,13 @@ Promsises-
   - flow control
   - chaining promises.
   - promise chain 
+
+  - Promise.all | gate
+  - Promise.race | whoever gets complete first
+
+Generator
+ - run to completion 
+ - run to completion is not in Generator - state machine
+ - pausable function.
+ - localized blocking.
+ - synchronus flow control.

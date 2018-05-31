@@ -19,26 +19,35 @@ function output(text) {
 
 function getFile(file, resolve) {
     
-
     return new Promise(function(resolve, reject){
-        fakeAjax(file, function(data){            
-            resolve(data);
-        })
+        fakeAjax(file, resolve)
     })
 
 }
-
 
 var p1 = getFile('file1');
 var p2 = getFile('file2');
 var p3 = getFile('file3');
 
 p1.then(function(data){
-    console.log(data);
-    return p2;
-}).then(function(data){
-    console.log(data)
-    return p3;
-}).then(function(data){
-    console.log(data);
+//     console.log(data);
+// }).then (function(){
+//     return p2;
+// }).then(function(data){
+//     console.log(data)
+//     return p3;
+// }).then(function(data){
+//     console.log(data);
+// })
 })
+
+
+p1.then(function(){
+    return "hello"
+}).then(function(param){
+    console.log(param)
+}).then(function(){
+    console.log("3")
+}).catch(function(err){
+    console.log("sd", err);
+});
