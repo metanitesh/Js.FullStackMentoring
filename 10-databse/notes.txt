@@ -1,0 +1,78 @@
+ what is the problem
+  - spreadsheet, folders, text
+  - size, 
+  - how would you update, 
+  - ease of updating, acuuracy, 
+  - security, 
+  - who made all the changes, 
+  - duplication
+   - improtance of data. 
+
+   - scalable, 
+   - asscicable. 
+   - accurate
+   - secure
+   - consistency
+   - permanent
+
+  - strucutre.
+  - invisible.
+  - crashes, 
+
+  - DBMS
+  - use to create database.
+
+  - RDBMS
+  - network, 
+  - obejct oriented DBMS, nosql.
+
+
+  - database 
+   - table. structure.
+   - table, column, row.
+   - key - unique ID. surrogate or syethetic keys.
+   - key - foraign key. order | customer table. formal relationship.
+   - one to many relationship. 
+   - one to one [not much]
+
+ - transaction
+  - banking system. adding to one account.
+  - ACID test - atomic, it happens or not. consistency. valid state to other. 
+  - isolation, data and trascation should be isolated. durable. transaction happens.
+
+  Nosql
+  - relationship
+  - acid 
+  - formal data scheme
+  - no sql
+  
+  Document Store
+   - document store.
+   - no schema. 
+
+ - From the position x how to find places nearby
+ - paypal
+
+ - Nosql  
+  - no acid but automic
+  - no structure 
+
+When not to use nosql
+ - highly strucure.
+ - data integrity is the key 
+
+ Good use case
+  - unstructure
+  - high write performance.
+  - scale easily.
+
+Mongoose 
+ - document mapper.
+ 
+
+
+
+
+
+     
+

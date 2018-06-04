@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<div>
+	<input type="text" class="input">
+	<button class="submit">submit</button>
+</div>
+<ul class="list"></ul>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+
+// var foo = function(param){
+// 	return param
+// }
+
+
+$(".submit").click(function(e){
+	
+	var val = $(".input").val();
+	
+	if(val.length > 0){
+
+		$("ul").prepend("<li>"+val+"<button class='close'>X</button></li>");
+	
+	}
+
+	
+
+
+})
+
+$("ul").on("click", ".close", function(e){
+	// $(this).parent().hide();
+	$(document).trigger("deleted");
+
+})
+
+
+$(document).on("deleted", function(){
+	alert("delete");
+})
+
+
+</script>
+</body>
+</html>

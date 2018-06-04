@@ -42,6 +42,7 @@ p1.then(function(data){
 })
 
 
+
 p1.then(function(){
     return "hello"
 }).then(function(param){
@@ -51,3 +52,5 @@ p1.then(function(){
 }).catch(function(err){
     console.log("sd", err);
 });
+
+console.log(Promise.all)

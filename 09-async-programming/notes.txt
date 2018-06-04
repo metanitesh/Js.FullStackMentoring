@@ -44,3 +44,8 @@ Generator
  - pausable function.
  - localized blocking.
  - synchronus flow control.
+ - inversion of control issue.
+ - yeild promise
+
+
+ 

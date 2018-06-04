@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <style>
+    .box{
+		width:200px;
+		height: 200px;
+		background: red;
+		
+	}	
+
+	.box1{
+		width:100px;
+		height: 100px;
+		background: green;
+	}
+
+	.box2{
+	width:100px;
+		height: 100px;
+		background: blue;	
+	}
+    </style>
+    
+</head>
+
+<body>
+	<div class="parent">
+	<div class="box">
+		red
+		<div class="box1">
+			green
+		</div>
+
+		<div class="box2">
+			green
+		</div>
+	</div>
+	</div>
+	<form action="">
+		<input type="text">
+		<input type="checkbox">
+		<input class="sub" type="submit">
+	</form>
+	<a class="google" href="http://google.com">google</a>
+	<!-- <div class="nav">
+        <ul>
+            <li>
+                <a href="">home</a>
+                <a href="">about</a>
+                <a href="">contact</a>
+                <a href="">content</a>
+                <a href="">product</a>
+            </li>
+            <li>
+                <a href="">special</a>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, vel perferendis deleniti, ex aperiam aspernatur animi blanditiis, ipsam saepe ut facere soluta! Dolor earum ipsa quidem distinctio dignissimos voluptate enim voluptas velit at, repellat vel delectus rem provident reiciendis minima ullam error quia sequi recusandae consectetur? Porro vero eligendi, ex.
+        <a href="http:/google.com">google</a>
+    </div>
+    <div class="footer">
+        <div class="sitemap">
+            <ul>
+                <li>
+                    <a href="">home</a>
+                    <a href="">about</a>
+                    <a href="">contact</a>
+                </li>
+            </ul>
+        </div>
+    </div> -->
+    <script>
+    // $(document).ready(function(){
+
+    // })
+	
+	var a = [10,10]
+	console.log(a.length);
+
+	$(".box1").click(function(e){
+		a.push(20);
+		console.log(a.length)
+	})
+
+	// $().on("click", function(){
+
+	// })
+
+	// $(".box").click(function(e){
+	// 	alert("box red")
+	// })
+    // $(".google").click(function(e){
+    // 	e.preventDefault();
+    // })
+    </script>
+</body>
+
+</html>

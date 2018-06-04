@@ -32,15 +32,17 @@ Abstraction
  - +
  - function overriding.
 
+--
+
  Object modeling
  - gather requirment
  - describe app
  - identify the main objects.
  - describe the interaction
  - create a class diagram
-
  UML diagram
 
+--
  Use Cases.
  - Title - register new member, transfer fund
  - Actor - User, Customer, System
@@ -59,8 +61,83 @@ Abstraction
 
 - as a User I want to sort the enteries so that I can find the most recent conent.
 
+--
+
 Domain modeling
- - 
+ - It is ok to be incomplete
+ - Highlight the nouns and they are the potential object. they will show class and attribute
+ - diagram
+ - which object interact with other and behaviour affect others.
+ - verb to figure out the responsiblities. but where it lives, an order should have it's own responsiblity
+
+CRC card, class responsiblity and collobration. Class diagram.
+If you need more than one card, you better split the class.
+
+--
+Class Diagram
+ - -name
+ - -isActive = false
+ - -launchdate
+ - -itemNumber
+
+ - +getName()
+ - -formatProductDetail()
+ - +setActive()
+
+ - implement the real class
+ 
+ - Obejct Lifetime using new than system allocated some memory
+ - Do you want to be part of it, constructore. it it where it is given the values
+ - Destrcutor, Finalizer, to relase the resource. 
+ - Static, shared variable and methods. interest rates.
+
+--
+Inheritence 
+
+- IS A relationship
+- a car is a vehicle
+- bank and bankaccount. no. checking out is a bank account.
+- overriding, in addition to real method.
+- album | movie |  book --> prodcut.
+
+- super, to call the method from parent - super.name();
+- Using abstract class, never initiantiate
+
+- Interface, just the method signature.
+- It is the contract.
+- Interface over inharitence
+
+
+- Object holders
+- Has a relationship
+- classroom has students
+- composition imply ownership.
+
+---
+object conversation 
+- squence diagram
+- thinking tool
+
+---- 
+Design Patterns
+ - best practices. 
+ - well tested proven way, observer
+ - creational pattern, structural pattern[how classes are designed], behavioural pattern(communicaton between objects)
+ - Singlton.
+
+ ---
+
+Principle
+
+
+
+
+
+
+
+
+
+
 
 
 
