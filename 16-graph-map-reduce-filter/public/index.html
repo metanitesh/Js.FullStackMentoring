@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<h1>highchart: </h1>
+
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.core.js"></script>
+ -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+
+		$.ajax({
+			url: "/get-most-ecinomical-bowler",
+			type: "GET",
+			success : function(data){
+				console.log();
+				$("h1").append(JSON.stringify(data));
+			}
+		})
+
+	})
+
+
+</script>
+<!-- <script src="graph-one.js"></script> -->
+<!-- <script src="graph-two.js"></script> -->
+
+</body>
+</html>
