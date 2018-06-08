@@ -1,83 +1,48 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css'
-// var data = {
-//     text: "breakfast"
-// }
+import './index.css';
+import Todo from './todo.js'
+import Greet from './conditional.js'
+import List from './conditional.js'
+import NumberList from './numberlist';
+import { formatDiagnostic, isElementAccessExpression, ClassificationType, isCaseOrDefaultClause } from 'typescript';
+import NameForm from './name-form.js'
 
 
-// function List(){
-//     return (<h1>List</h1>)
-// }
-
-class AddText extends React.Component{
-
-    render(){
-        return (
-            <input type="text"/>
-        )
-        
+function BoilingVerdict(props){
+    if(props.celsius >= 100){
+        return <p>water is boiling</p>
+    }else{
+        return <p>water is not boilding</p>
     }
 }
 
-
-
-
-class Todo extends React.Component{
-
-    render(){
-        var data = {text : "breakfast"};
-
-        return (
-        <div className="border">
-            <AddText  />
-            <List list={data}/>
-        </div>        
-        )
-        
-    }
-}
-
-
-
-
-class List extends React.Component{
+class Calculator extends React.Component{
 
     constructor(props){
-        super(props)
-        this.state = {
-            counter : 1
+        super(props);
+        this.state={
+            temprature: 0
         }
-
-        this.handleClick = this.handleClick.bind(this);
-
-    }
-
-    componentDidMount(){
         
+        this.updateVerdict = this.updateVerdict.bind(this);
     }
 
-    handleClick(e){
-
-        console.log(this.state.counter)
-
-        this.setState(function(prevState){
-           
-         return{
-            counter: prevState.counter+1
-         }
-            
+    updateVerdict(event){
+    
+        this.setState({
+            temprature: event.target.value
         })
     }
 
     render(){
-        return (<div><h1>{this.props.list.text}{this.state.counter}</h1><p>lorem30</p><button onClick={this.handleClick}>click me</button></div>)
-        
-        
+        return(
+            <div>
+                <input type="text" onChange={this.updateVerdict}/>
+                <BoilingVerdict celsius= {this.state.temprature}/>
+            </div>
+        )
     }
 }
 
-
-
-
-ReactDOM.render(<Todo />, document.getElementById('root'))
+ReactDOM.render(<Calculator celsius={200} />, document.getElementById('root'))

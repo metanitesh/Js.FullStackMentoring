@@ -4,7 +4,7 @@ import './index.css';
 
 
 
-class Input extends React.Component{
+class input extends React.Component{
 
     constructor(props){
         super(props)
@@ -53,8 +53,6 @@ class List extends React.Component{
 
 
 class Todo extends React.Component{
-
-
 
     render(){
 
