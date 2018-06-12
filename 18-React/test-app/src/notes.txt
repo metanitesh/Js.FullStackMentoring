@@ -1,0 +1,26 @@
+Flux
+ | uni directional  data flow
+ | data flow down | action flow up.
+ | Action
+ | Dispatcher
+ | Store
+ | React View
+
+API
+  - register
+  - unRegister
+  - waitFor 
+  - Dispatch
+  - isDispatch 
+  
+Container | Presentation
+ - 
+
+Redux
+ - One immutable Store
+ - Actions triggers change 
+ - Reducers update the state
+
+React-Redux
+ - 
+
