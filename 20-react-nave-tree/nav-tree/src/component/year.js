@@ -7,7 +7,7 @@ class Year extends Component {
     super(props);
     this.state ={
       display: true,
-      target: null
+      target: 0
     }
     
     this.handleClick = this.handleClick.bind(this);
@@ -40,8 +40,8 @@ class Year extends Component {
 
     var years = this.props.data.map((year, index)=>{
       return (
-      <li key={index} id={index} onClick={this.handleClick}>{year.season}
-            {this.state.target == index && this.state.display && <TeamList data={year.matchData}/> }
+      <li id={index} onClick={this.handleClick}>{year.season}
+            {this.state.target == index && this.state.display && <TeamList key={index} data={year.matchData}/> }
       </li>)
     })
 
