@@ -1,0 +1,13 @@
+JWT 
+ - Contain info about issue and subject
+ - signed 
+ - time 
+Type 
+ - SAML - XML based.
+ - Simple Web Token (Symmetric | Asymmetric)
+JSON Web Token
+ - JSON encode 
+ - Symmetric and Asymmetric
+
+HEADER | CLAIMS.
+
