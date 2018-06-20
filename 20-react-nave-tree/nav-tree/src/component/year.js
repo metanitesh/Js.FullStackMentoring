@@ -4,34 +4,20 @@ import TeamList from './teamList';
 class Year extends Component {
 
   constructor(props) {
-    super(props);
-    this.state ={
-      display: true,
-      target: 0
-    }
-    
+    super(props);  
     this.handleClick = this.handleClick.bind(this);
+    this.state = {
+      display : true,
+      id: 1
+    }
   }
   
-  handleClick(e){
-    var target = e.target.id;
-
-    this.setState(function(prevState){
-      
-      var display = true;
-
-      if(target != prevState.target){
-        display = true;
-      }
-
-      if(target == prevState.target){
-        display = !prevState.display;
-      }
-
-
+  handleClick(e){    
+    var id = e.target.id;
+    this.setState((prev)=>{
       return {
-        target : target,
-        display : display
+        display: !prev.display,
+        id: id
       }
     })
   }
@@ -41,7 +27,7 @@ class Year extends Component {
     var years = this.props.data.map((year, index)=>{
       return (
       <li id={index} onClick={this.handleClick}>{year.season}
-            {this.state.target == index && this.state.display && <TeamList key={index} data={year.matchData}/> }
+             { (this.state.id == index) && this.state.display && <TeamList key={index} data={year.matchData}/> }
       </li>)
     })
 
