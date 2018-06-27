@@ -3,4 +3,5 @@
 
     // Controls the font family.
     "editor.fontFamily": "Consolas, Menlo, Monaco, 'Courier New', monospace, 'Apple Color Emoji'",
+    "git.ignoreLimitWarning": true,
 }
