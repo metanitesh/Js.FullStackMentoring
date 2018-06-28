@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <form action="/auth/sign-up" method="POST">
+        <input type="text" name="username" placeholder="username"><br>
+        <input type="text" name="password" placeholder="password"><br>
+        <button>Submit</button>
+    </form>
+
+    <hr>
+    <h1>Sign In</h1>
+    <form action="/auth/sign-in" method="POST">
+        <input type="text" name="username" placeholder="username"><br>
+        <input type="text" name="password" placeholder="password"><br>
+        <button>Submit</button>
+    </form>
+
+
+    <form action="/logout" method="POST">
+      <button>logout</button>
+    </form>
+</body>
+
+<script>
+
+    
+
+
+//     postData('auth', {answer: 42})
+//   .then(data => console.log(data)) 
+//   .catch(error => console.error(error))
+
+function postData(url, data) {
+  // Default options are marked with *
+  return fetch(url, {
+    body: JSON.stringify(data), // must match 'Content-Type' header
+    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+    credentials: 'same-origin', // include, same-origin, *omit
+    headers: {
+      'user-agent': 'Mozilla/4.0 MDN Example',
+      'content-type': 'application/json'
+    },
+    method: 'POST', // *GET, POST, PUT, DELETE, etc.
+    mode: 'cors', // no-cors, cors, *same-origin
+    redirect: 'follow', // manual, *follow, error
+    referrer: 'no-referrer', // *client, no-referrer
+  })
+  .then(response => response.json()) // parses response to JSON
+}
+
+</script>
+</html>
